@@ -165,9 +165,22 @@ h3{
 }
 
 
+.btn-ghost:link, .btn-ghost:visited, input[type=submit]{
+
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
 
 
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #000000;
 
+    color: #000000;
+}
 
 
 
