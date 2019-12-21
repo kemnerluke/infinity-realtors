@@ -165,7 +165,7 @@ h3{
 }
 
 
-.btn-ghost:link, .btn-ghost:visited, input[type=submit]{
+.btn:link, .btn:visited, input[type=submit]{
 
     display: inline-block;
     padding: 10px 30px;
@@ -176,7 +176,7 @@ h3{
 }
 
 
-.btn-ghost:link, .btn-ghost:visited {
+.btn:link, .btn:visited {
     border: 1px solid #000000;
 
     color: #000000;
@@ -184,7 +184,23 @@ h3{
 
 
 
+.btn:hover,
+.btn:active {
+    background-color: #000;
+}
 
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #b05d14;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #000;
+    color: #fff;
+}
 
 
 
@@ -209,17 +225,23 @@ footer {
     float: left;
 }
 
-.footer-nav li {
+
+
+.footer-nav li,
+.social-links li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.footer-nav li:last-child,{
+.footer-nav li:last-child,
+.social-links li:last-child {
     margin-right 0px;
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited,{
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
     text-decoration: none;
     border: 0;
     color: #888;
@@ -230,6 +252,10 @@ footer {
     color: #ddd;
 }
 
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
 
 
 footer p {
